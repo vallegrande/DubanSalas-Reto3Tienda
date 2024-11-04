@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background: #a2d7c6;
+    color: white;
+    padding: 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    flex: 1 1 100%; /* Se adapta en dispositivos pequeños */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex: 1 1 100%; /* Se adapta en dispositivos pequeños */
+    justify-content: flex-end;
+}
+
+nav ul li {
+    margin-left: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #d4edda;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    filter: brightness(70%);
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    background: #FF5733;
+    color: white;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #C70039;
+}
+
+.categorias {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.categorias h2 {
+    margin-bottom: 1.5rem;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.categoria {
+    text-align: center;
+    flex: 1 1 30%; /* Se adapta en dispositivos pequeños */
+    max-width: 150px; /* Limita el tamaño */
+}
+
+.categoria span {
+    font-size: 2rem;
+    display: block;
+}
+
+.categoria img {
+    width: 150px; /* Tamaño fijo para todas las imágenes */
+    height: 150px; /* Tamaño fijo para todas las imágenes */
+    border-radius: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.categoria img:hover {
+    transform: scale(1.05);
+}
+
+.productos {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.productos h2 {
+    margin-bottom: 1.5rem;
+}
+
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.producto {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    text-align: center;
+    flex: 1 1 20%; /* Se adapta en dispositivos pequeños */
+    max-width: 200px; /* Limita el tamaño */
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: translateY(-5px);
+}
+
+.producto img {
+    width: 100%; /* Se ajusta al contenedor */
+    height: 150px; /* Altura fija para mantener consistencia */
+    object-fit: cover; /* Mantiene la proporción sin distorsionar */
+    border-radius: 10px;
+}
+
+.producto button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem; /* Cambiado a rem para mejor escalabilidad */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
+
+.producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    background: white;
+    margin: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carrusel {
+    flex: 1 1 50%; /* Se adapta en dispositivos pequeños */
+    margin-right: 2rem;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+    border-radius: 10px;
+}

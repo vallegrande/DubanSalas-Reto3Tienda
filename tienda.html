@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online</title>
+    <link rel="stylesheet" href="tienda.css">
+</head>
+<body>
+    <header>
+        <div class="logo">🛒 Mi Tienda</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">🏠 Inicio</a></li>
+                <li><a href="#tienda">🛍️ Tienda</a></li>
+                <li><a href="#contacto">✉️ Contacto</a></li>
+                <li><a href="#carrito">🛒 Carrito <span id="cart-count">0</span></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner">
+            <img src="https://s3.amazonaws.com/thumbnails.venngage.com/template/17a82938-e026-44a2-adf7-3ea44dea1e67.png" alt="Banner Promocional">
+            <div class="banner-text">
+                <h1>¡Grandes Ofertas!</h1>
+                <a href="#tienda" class="btn">Compra ahora</a>
+            </div>
+        </section>
+
+        <section class="categorias">
+            <h2>Categorías</h2>
+            <div class="grid">
+                <div class="categoria"><span role="img" aria-label="Ropa">👕</span><img src="/IMG/ROPA.png" alt="Ropa"></div>
+                <div class="categoria"><span role="img" aria-label="Electrónica">📱</span><img src="/IMG/electronico.jpg" alt="Electrónica"></div>
+                <div class="categoria"><span role="img" aria-label="Hogar">🏠</span><img src="/IMG/hogar.webp" alt="Hogar"></div>
+            </div>
+        </section>
+
+        <section class="productos">
+            <h2>Productos Destacados</h2>
+            <div class="galeria">
+                <div class="producto">
+                    <img src="/IMG/platos.jpg" alt="Producto 1">
+                    <h3>Producto 1 <span role="img" aria-label="Producto">✨</span></h3>
+                    <p>$150</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="/IMG/celular.jpg" alt="Producto 2">
+                    <h3>Producto 2 <span role="img" aria-label="Producto">🌟</span></h3>
+                    <p>$3.000</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="/IMG/elegante.webp" alt="Producto 3">
+                    <h3>Producto 3 <span role="img" aria-label="Producto">✨</span></h3>
+                    <p>$200</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <div class="producto">
+                    <img src="/IMG/laptop1.jpg" alt="Producto 4">
+                    <h3>Producto 4 <span role="img" aria-label="Producto">🌟</span></h3>
+                    <p>$2.500</p>
+                    <button>Agregar al carrito</button>
+                </div>
+                <!-- Más productos -->
+            </div>
+        </section>
+
+        <!-- Página de Detalles del Producto -->
+        <section class="producto-detalle">
+            <div class="carrusel">
+                <input type="radio" name="slides" id="slide1" checked>
+                <input type="radio" name="slides" id="slide2">
+                <input type="radio" name="slides" id="slide3">
+
+                <div class="slides">
+                    <div class="slide slide1">
+                        <img src="producto1.jpg" alt="Producto">
+                    </div>
+                    <div class="slide slide2">
+                        <img src="producto2.jpg" alt="Producto">
+                    </div>
+                    <div class="slide slide3">
+                        <img src="producto3.jpg" alt="Producto">
+                    </div>
+                </div>
+
+                <div class="navegacion">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                </div>
+            </div>
+
+            <div class="info-producto">
+                <h1>Nombre del Producto</h1>
+                <p>Descripción breve del producto. Es un producto excelente para tus necesidades.</p>
+                <p class="precio">$100</p>
+                <div class="selector-cantidad">
+                    <label for="cantidad">Cantidad:</label>
+                    <input type="number" id="cantidad" value="1" min="1">
+                </div>
+                <button class="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </section>
+
+        <section class="descripcion-extendida">
+            <input type="checkbox" id="pestana1" checked>
+            <label for="pestana1">Descripción</label>
+            <div class="contenido">
+                <p>Detalles adicionales del producto, incluyendo materiales, instrucciones de cuidado, etc.</p>
+            </div>
+
+            <input type="checkbox" id="pestana2">
+            <label for="pestana2">Opiniones</label>
+            <div class="contenido">
+                <p>Aquí irían las opiniones de otros usuarios sobre el producto.</p>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
